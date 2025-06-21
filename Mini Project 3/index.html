@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projek Pertama</title>
+
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="kedua">
+      <div class="glass">
+        <div class="teks">
+          <h2 class="text-gradient">Daftar</h2>
+        </div>
+        <div class="glassdalem">
+          <div class="bagianinput username">
+            <i class="bx bx-user"></i>
+            <input
+              type="text"
+              id="username"
+              placeholder="Username"
+              class="inputdata"
+            />
+          </div>
+          <div class="bagianinput password">
+            <i class="bx bx-car-key"></i>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password (berkarakter 8-12)"
+              class="inputdata"
+            />
+            <div id="pemanggilganti">
+              <button class="lihatpassword" id="switch-mata">
+                <i class="bx bx-eye" id="mata"></i>
+                <i class="bx bx-eye-closed"></i>
+              </button>
+            </div>
+          </div>
+          <div class="placebutton">
+            <button class="desaintombolrandom" onclick="klikRandomizer()">
+              Buat password acak
+            </button>
+          </div>
+          <div class="notifteks">
+            <p id="outputteks"></p>
+          </div>
+          <div class="tombolkirim">
+            <button class="kirimnilai" id="kirimnilai" onclick="buatAkun()">
+              Buat Akun
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
